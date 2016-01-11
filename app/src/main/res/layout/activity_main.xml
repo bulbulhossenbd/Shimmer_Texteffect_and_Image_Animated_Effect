@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
+    <!--android:background="#242424">-->
+
+<!--&lt;!&ndash;Simple Shimer Text Effect&ndash;&gt;-->
+<!--&lt;!&ndash;-->
+    <!--<com.romainpiel.shimmer.ShimmerTextView-->
+        <!--android:id="@+id/shimmer_tv"-->
+        <!--android:text="@string/shimmer"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:textColor="#444"-->
+        <!--android:textSize="50sp"-->
+        <!--android:layout_gravity="center"-->
+        <!--style="@style/MyTextView"/>-->
+<!--&ndash;&gt;-->
+
+<!--&lt;!&ndash;    <Button-->
+        <!--android:text="@string/toggle_animation"-->
+        <!--android:onClick="toggleAnimation"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="bottom"/>-->
+
+
+   <!--&lt;!&ndash; Customizing the view&ndash;&gt;&ndash;&gt;-->
+
+    <!--<com.romainpiel.shimmer.ShimmerTextView-->
+        <!--android:id="@+id/shimmer_tv"-->
+        <!--android:text="@string/shimmer"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:textColor="#444"-->
+        <!--android:textSize="50sp"-->
+        <!--app:reflectionColor="#f00"/>-->
+
+
+
+<!--</FrameLayout>-->
+
+
+    <!--part two -->
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:shimmer="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+
+    <com.facebook.shimmer.ShimmerFrameLayout
+        android:id="@+id/shimmer_view_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        shimmer:duration="1000">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            >
+
+
+            <ImageView
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:src="@drawable/fb_logo"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:textSize="30sp"
+                android:text="Facebook’s mission is to give people the power to share and make the world more open and connected."
+             />
+        </LinearLayout>
+    </com.facebook.shimmer.ShimmerFrameLayout>
+
+</FrameLayout>
